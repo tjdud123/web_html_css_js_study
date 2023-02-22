@@ -24,3 +24,35 @@
     <ul>
       <li>
 </body>
+<hr>
+</head>
+<body>
+    <h1>RIDIBOOKS</h1>
+    <div>
+        <form>
+            <fieldset>
+                <legend>로그인양식</legend>
+                <ul>
+                    <li>
+                        <input type="text" name="id" placeholder="아이디">
+                    </li>
+                    <li>
+                        <input type="password" name="pw" placeholder="비밀번호">
+                    </li>
+                    <li>
+                        <input type="radio" name="login" value="" id="box">
+                        <label for="box">로그인 상태 유지</label>
+                    </li>
+                    <li><a href="#"">아이디찾기</a></li>
+                    <li><a href="#">비밀번호 재설정</a></li>
+                </ul>
+            </fieldset>
+            <div>
+                <button type="submit">로그인</button>
+                <button type="submit">회원가입</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+    
