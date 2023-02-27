@@ -1,0 +1,16 @@
+header {background-color: aqua; height:100px; }
+header::after {clear:both; display:block; content:'';}
+header h1 {background-color: gray; float:left;}
+header form{background-color: lime; float:left;}
+header .lnb{background-color:pink; float: right; }
+header .lnb a {}
+header h1, header form, header .lnb {height: 100px; width: 100px;}
+main {}
+main .path {}
+main .path .skip {}
+main .path dd {}
+main .path dd .awesome {}
+main .path dd .awesome::after {display:inline; content:'\f06d'; }
+main .path .blog {}
+main .path .blog::after,
+main .path .blog::before {display:inline; content:'\f054';}
