@@ -137,6 +137,17 @@
         #t thead tr th, #t tfoot tr th {background-color: red;}
         /* ------------------------형제선택자 */
         .test_box #title2~P {border: 10PX solid black;}
+        
+        <hr>
+        <h2>css 위치속성 float</h2>
+        <p>css로 위치속성을 위해서는 float를 설정해야하는데, float로 좌우 위치변경이 가능하다.
+        
+        float:left;
+        float:right;
+        float:nonw;
+        
+        다만, float는 
+        
 </body>
 
 </html>
