@@ -1,0 +1,54 @@
+/* header */
+header {height: 92px;}
+header h1 {float:left; padding: top 5px;}
+header h1 a {}
+header h1 a img{width:60px}
+header nav {float:left; line-height: 92px;}
+header nav a {font-size: 1.063rem; padding-left:30px;}
+header nav .activ {padding: 0; color:#36b4e5;}
+header .lnb {float:right; line-height: 92px;}
+header .lnb a {}
+header .lnb a::before {
+    content:'|';
+    display:inline;
+    padding-left:10px;
+    margin-right:10px;
+}
+/* main ---------------------------*/
+main {}
+/* 공통배경 */
+main .bg {background-color: #f1f1f1;}
+main .bg_w {}
+/* 현재페이지경로 */
+main .bg .top {}
+main .bg .top dt {}
+main .bg .top dd {}
+main .bg .top dd span {}
+main .bg .top dd em {}
+/* 경영이념 제목 */
+main .bg_w .title {}
+main .bg_w .title h1 {font-size:2.5em;}
+main .bg_w .title p {}
+/* 경영이념 내용 */
+main .bg .contents {}
+main .bg .contents p {}
+/* 경영이념 vision */
+main .bg_w .contents {}
+main .bg_w .contents h2 {font-size:1.375em;}
+main .bg_w .contents p{}
+/* 경영이념 goal, strategy */
+main .bg .contents h2 {}
+main .bg .contents ul {}
+main .bg .contents ul li {}
+main .bg .contents ul li h3 {}
+main .bg .contents ul li p {}
+
+/* footer -------------------------*/
+footer {}
+footer .ft_top {}
+footer .ft_top .ft_top_left {}
+footer .ft_top .ft_top_left a {}
+footer .ft_top .ft_top_right {}
+footer .ft_top .ft_top_right a {}
+footer address {}
+footer address+p {}

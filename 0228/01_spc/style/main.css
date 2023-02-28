@@ -1,0 +1,92 @@
+/* header */
+header {height: 92px; }
+header h1 {float:left; padding: top 5px;}
+header h1 a {}
+header h1 a img{width:60px}
+header nav {
+    float:left; line-height: 92px;
+    margin-left:300px;
+    text-align: center;
+}
+header nav a {font-size: 1.063rem; padding-left:30px;}
+header nav .activ {padding: 0; color:#36b4e5;}
+header .lnb {float:right; line-height: 92px;}
+header .lnb a {}
+/* 자식선택자를 이용해서 기입하면, span같은건 필요없음 */
+/* header .lnb a::before {
+    content:'|';
+    display:inline;
+    padding-left:10px;
+    margin-right:10px; }*/
+
+header .lnb a:nth-child(2)::before {
+    content:'|';
+    display:inline;
+    padding-left:10px;
+    margin-right:10px;
+}
+/* main ---------------------------*/
+main {}
+/* 공통배경 */
+main .bg {
+    background-color: #f1f1f1;
+    padding:50px 0;
+    text-align: center;
+}
+main .bg_w {padding:50px 0;  text-align: center;}
+/* 현재페이지경로 */
+main .bg_path {border:1px; soild: #aaa;
+    border-left:none; border-right:none;
+    background-color: #f1f1f1; float:right; }
+main .bg_path .top {padding:20px 0; }
+main .bg_path .top .skip{}
+main .bg_path .top .path{}
+main .bg_path .top .path{}
+main .bg_path .top .path span {}
+main .bg_path .top .path em{}
+
+/* 경영이념 제목 */
+main .bg_w .title {}
+main .bg_w .title h1 {font-size:2.5em; margin:15px;}
+main .bg_w .title p {}
+/* 경영이념 내용 */
+main .bg .contents {}
+main .bg .contents p {line-height:1.5;}
+/* 경영이념 vision */
+main .bg_w .contents {}
+main .bg_w .contents h2 {
+    font-size: 1.375rem;
+    color:#36b4e5;
+    margin-bottom:30px;
+}
+main .bg_w .contents p{
+    font-size:1.938rem;
+    line-height:1.5;
+    letter-spacing:-0.02rem;
+}
+main .bg_w .contents p:nth-child(2) {margin-bottom:100px;}
+/* 경영이념 goal, strategy */
+main .bg .contents h2 {
+    font-size:1.250rem;
+    margin-bottom:30px;
+}
+main .bg .contents ul {
+    /* overflow:hidden; */
+    display:inline-block;
+}
+main .bg .contents h2:nth-child(3){margin_top:100ox;}
+
+main .bg .contents ul li {border-radius: 50%;}
+main .bg .contents ul li h3 {}
+main .bg .contents ul li p {}
+
+/* footer -------------------------*/
+footer {padding:50px 0;}
+footer .ft_top {overflow:hidden;}
+footer .ft_top .ft_top_left {float:left;}
+footer .ft_top .ft_top_left a {font-weight: 700;}
+footer .ft_top .ft_top_right {float:right;}
+footer .ft_top .ft_top_right a {border:1px solid #aaa;
+    display:inline-block; padding:10px 20px;}
+footer address {line-height: 1.5;}
+footer address+p {padding-top:15px;}
