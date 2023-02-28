@@ -1,0 +1,32 @@
+
+main {background-color: antiquewhite;
+    width: 850px;
+    margin: 0 auto;
+}
+main .top {
+    background-color: aqua;
+    height:100px;
+}
+main .top h1 {
+    font-size: 20px;
+    float:left;
+    padding-top: 40px;
+}
+main .top dl {padding-top: 40px;}
+main .top dl dd {font-size: 14px; float:right;}
+main .top dl dd span {font-size: 14px; }
+main .top dl dd em {font-size: 14px; font-weight: bold;}
+main section {
+    background-color: cadetblue;}
+main section h2 {
+    margin:0 25px
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-size: 17px;}
+main section p {padding-bottom:50px; 
+    margin:0 25px}
+main section p em {
+    font-size: 30px; color:green;
+
+}
+main section p:nth-of-type(1) {font-size:30px; padding-bottom: 50px;}
