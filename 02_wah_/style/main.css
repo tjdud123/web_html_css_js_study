@@ -7,7 +7,7 @@ main {
 main .top {
     overflow: hidden;
     height:100px;
-    border:1px solid gray;
+    border-bottom:1px solid gray;
 }
 main .top h1 {
     font-size: 20px;
