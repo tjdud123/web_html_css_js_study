@@ -29,7 +29,6 @@ main section h2 {
     padding:100px 0px 50px 0px;
     color:darkblue;
     font-weight: bold;
-
 }
 main section h2 i {
     padding-right:5px;
@@ -37,7 +36,9 @@ main section h2 i {
 main section p {
     line-height: 130%;
     padding-bottom:50px; 
-    margin:0 25px}
+    margin:0 25px;
+    word-spacing: 5px;
+}
 main section p em {
     font-size: 30px; color:green;
 
