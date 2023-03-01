@@ -1,8 +1,10 @@
 
+
 main {
     width: 850px;
     margin: 0 auto;
     border:1px solid gray;
+    word-spacing: 2;
 }
 main .top {
     overflow: hidden;
@@ -24,9 +26,10 @@ main section {}
 main section h2 {
     margin:0 25px;
     font-size:17px;
-    padding:30px 0px;
+    padding:100px 0px 50px 0px;
     color:darkblue;
     font-weight: bold;
+
 }
 main section h2 i {
     padding-right:5px;
@@ -34,7 +37,7 @@ main section h2 i {
 main section p {
     line-height: 130%;
     padding-bottom:50px; 
-    margin:0 40px}
+    margin:0 25px}
 main section p em {
     font-size: 30px; color:green;
 
