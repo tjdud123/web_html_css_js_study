@@ -1,5 +1,3 @@
-
-
 main {
     width: 850px;
     margin: 0 auto;
@@ -22,7 +20,14 @@ main .top dl dd {font-size: 14px; float:right;}
 main .top dl dd i {padding-right:5px;}
 main .top dl dd span {font-size: 14px; }
 main .top dl dd em {font-size: 14px; font-weight: bold;}
-main section {}
+main section {
+    /* 배경이미지 속성 */
+    background-image: url(../IMG/BG.png);
+    background-size:50%;
+    background-repeat: no-repeat;
+    /* 포지션은 항상 x, y 순서 */
+    background-position: right -30px;
+}
 main section h2 {
     margin:0 25px;
     font-size:17px;
@@ -34,7 +39,7 @@ main section h2 i {
     padding-right:5px;
     color:darkblue;}
 main section p {
-    line-height: 130%;
+    line-height: 180%;
     padding-bottom:50px; 
     margin:0 25px;
     word-spacing: 5px;
