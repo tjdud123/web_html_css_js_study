@@ -1,0 +1,163 @@
+/* #1e61a8 / #ff7f50 / #555 / #eee */
+header, main{
+    width: 1080px; margin:0 auto;
+}
+
+header {padding:3px solid #1e61a8;}
+header #search {
+    border: 3px solid #1e61a8;
+    background-color: #fff;
+    width: 435px;
+    margin:0 auto;
+    border-radius: 5px;
+}
+header #search fieldset {}
+header #search fieldset .skip {}
+header #search fieldset input {
+    float:left; border:0;
+    width:90%; line-height: 30px;
+}
+header #search fieldset button {
+    background-color: #1e61a8; color:#fff;
+    width: 30px; height: 30px; float:right;
+}
+header #search fieldset .skip input button i {}
+/* left */
+main {
+    overflow: hidden;
+}
+main aside {
+    float:left;
+    width:200px;
+}
+main aside h2 {
+    font-size: 40px;
+    color:#1e61a8;
+    padding:20px;
+    
+    
+}
+main aside .menu {
+    
+}
+main aside .menu a {
+    border-top: 1px solid #eee;
+    display:block;
+    padding: 20px;
+    font-weight: 700;
+}
+main aside .menu .active {
+    background-color: #1e61a8 ; color:white;}
+
+/* main_top */
+main .container {
+    width: 848px;
+    float: right;
+    border: 1px solid gray;
+}
+main .container .title {
+    background-color: #eee;
+    padding:20px 10px;
+    overflow:hidden;
+}
+main .container .title h1 {
+    float:left;
+    font-size:24px;
+    font-weight: 700;
+}
+main .container .title dl {
+    
+}
+main .container .title dl dt {
+
+}
+
+main .container .title dl dd {
+    float:right;
+    padding-right: 3px;
+    font-size: 12px;
+}
+main .container .title dl dd span{
+    font-size: 12px;
+}
+
+/* middle */
+main .container .contents {
+    overflow: hidden;
+    padding:25px;
+}
+main .container .contents .box {
+    width: 720px;
+    border: 1px solid gray;
+    margin:0px auto;
+    overflow:hidden;
+    padding:30px 0 30px 30px;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: 90% 35%;
+}
+main .container .contents .box h2 {
+    font-size: 40px;
+    padding: 20px 0;
+    letter-spacing: -0.03em;
+}
+main .container .contents .box h2 em {
+    font-size: 40px;
+    color: #1e61a8 ;
+    letter-spacing: -0.03em;}
+main .container .contents .box p {
+    padding:20px 0;
+    color:#888;
+    border-bottom: 1px dotted #888;
+}
+main .container .contents .box form  {
+    padding:20px 0;
+}
+main .container .contents .box form fieldset  {
+    overflow: hidden;
+}
+main .container .contents .box form fieldset .member {float: left;}
+main .container .contents .box form fieldset .member li {}
+main .container .contents .box form fieldset .member li:first-child {margin-bottom:20px;}
+main .container .contents .box form fieldset .member li span {
+    display:inline-block; width:70px;
+}
+main .container .contents .box form fieldset .member li input {
+    width:285px;
+}
+main .container .contents .box form div {}
+main .container .contents .box form div button {
+    font-size: 18px;
+    background-color: #1e61a8;
+    width: 70px; height: 60px;
+
+}
+/* 회원가입하기/ 아이디비번찾기 */
+main .container .contents .box form div .join {
+    
+}
+main .container .contents .box form div .join a {
+
+}
+main .container .contents .top_link {
+    background-color: #eee; display: inline; font-weight: 600;
+    width:50px; height:50px; border-radius: 50%;
+    text-align:center; line-height: 50px; float:right;
+    margin-bottom: 20px;
+}
+main .container .contents .top_link::before{
+    display: inline; font-weight: 600; content:\f077
+}
+/* 맨아래 */
+main .container .contents .bottom {
+    clear:both; background-color: #eee; border:1px solid #888;
+    padding:25px 0 25px 100px;
+}
+main .container .contents .bottom p {
+    letter-spacing: 130%;
+    line-height:1.8;
+    font-size: 0.875rem;
+}
+main .container .contents .bottom p em {
+    color:#ff7f50
+}

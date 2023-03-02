@@ -1,0 +1,52 @@
+#t2 {
+    width: 1200px;
+    margin: 50px auto 0;
+    border-top:3px solid #333;
+}
+#t2 thead {
+
+}
+#t2 thead tr {
+    border-bottom: 1px dotted #e5e5e5;
+    text-align: center;
+}
+#t2 thead tr th {
+    padding:30px 0;
+    background-color: #f5f5f5;
+    font-size: 20px;
+}
+#t2 thead tr th span {font-size: 0.813rem;}
+#t2 tbody {}
+#t2 tbody tr {
+    border-bottom: 1px dotted #e5e5e5;
+    
+}
+#t2 tbody tr th,#t2 tbody tr td {padding:30px,0}
+#t2 tbody tr th {
+    line-height: 180%;
+    font-size: 13px;}
+#t2 tbody tr th:first-child {font-weight: 700;}
+#t2 tbody tr th:nth-child(2) {text-align: left;}
+#t2 tbody tr th .title {
+    font-size: 16px;
+    font-weight: bold;
+}
+#t2 tbody tr th span {
+    background-color: #c286ff;
+    color:#fff;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    padding:3px;
+}
+#t2 tbody tr td {
+    text-align: center;
+    line-height: 180%;
+}
+#t2 tbody tr td em {color:#ec018c}
+#t2 tbody tr td a {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 7px 5px;
+    text-align: center;
+}
+#t2 tbody tr td a:nth-of-type(2) {background-color: #c286ff;}
