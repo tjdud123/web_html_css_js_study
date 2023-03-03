@@ -1,0 +1,39 @@
+body {
+    height: 300vh;
+}
+/* vh는 viewport height를 줄인 말로 창사이즈 중 높이의 1%를 크기로 갖습니다 */
+.container {
+    width:500px; padding:30px;
+    background-color: aqua;
+    margin:50px auto 0;
+    position: fixed;
+    right:0; top:0;
+}
+.container .contents {
+    background-color: yellow; padding:30px;
+    
+}
+.container .contents > * {
+    display: block; padding:10px;
+    border:2px solid red;
+    background-color: white;
+}
+.container .contents h1 {
+    position:absolute;
+    top:0; left:0;
+}
+/* x, y 축 한번씩만 조정 그냥 함수 그래프 생각하면 됨 */
+.container .contents p {
+    position: absolute;
+    bottom:0; right:0;
+}
+/* 앱솔루트는 부모 후보들 중에 포지션이 있음 그 대상을 부모로 인식하여 이동한다. 현재 컨텐츠, 컨테이너에
+포지션이 없어 바디를 부모로 인식하여 움직였다.  */
+/* 앱솔루트는 float 처럼 부유 효과가 있어서 다른 요소들의 위치를 고정하고 싶다면
+relative를 써야한다.  */
+/* 앱솔루트의 부모는 포지션 뒤에 릴레이티브 등이 들어오는 것과 는 별개로
+그냥 포지션만 들어있음 부모가 된다.  */
+/* left right top bottom 은 무조건 position이 있어야함 */
+.container .contents a {
+
+}
