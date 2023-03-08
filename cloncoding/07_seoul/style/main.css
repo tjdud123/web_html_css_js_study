@@ -1,0 +1,185 @@
+/* all lay-out */
+header {
+    width:1152px;
+    margin:0 auto;
+
+}
+header .h_top {
+    height: 48px;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header .h_btm {
+    height: 119px;
+    align-items: center;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+
+}
+
+/* 좌측 로고와 네비 */
+header .h_top .h_left {
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+}
+header .h_top .h_left h1 {}
+header .h_top .h_left h1 a {
+
+}
+header .h_top .h_left h1 a img {}
+header .h_top .h_left nav {
+    padding-left: 10px;
+}
+header .h_top .h_left nav a{
+    font-weight: bold;
+}
+/* 우측 바로가기섹션*/
+header .h_top .h_right {
+    
+}
+header .h_top .h_right a {
+    font-weight: bold;
+}
+/* 헤더 아래 */
+header .h_btm h1 {}
+header .h_btm h1 a {}
+header .h_btm h1 a img {}
+/* 검색창 */
+header .h_btm form {
+    border: 2px solid #1e6cb3;
+    background-color: white;
+}
+header .h_btm form fieldset {
+    border:none;
+    width:300px; height: 30px;
+}
+header .h_btm form fieldset input[name$=search] {
+    border:0;
+    outline: none;
+    width:90%;
+    padding:3px;
+}
+header .h_btm form fieldset input::placeholder {
+    color:#1e6cb3; 
+}
+header .h_btm form fieldset button {
+    border:none;
+    position:relative; top:3px;
+}
+header .h_btm form fieldset button a {}
+header .h_btm form fieldset button a img {
+
+}
+/* 언어 */
+header .h_btm .b_right {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:flex-end;
+    }
+
+header .h_btm .b_right #lang {
+    border: 2px solid #1e6cb3;
+}
+header .h_btm .b_right #lang option {}
+header .h_btm .b_right button {
+    background-color: #1e6cb3;
+    padding:5px;
+    color:white;
+}
+
+/* 날씨 */ 
+header .h_btm .b_right .weather {}
+header .h_btm .b_right .weather p{}
+header .h_btm .b_right .weather p:nth-child(1) {
+    font-size: 40px;
+}
+
+/* -----메인 시작-------*/
+/* 노란베너 */
+main {
+    width:1152px;
+    margin:0 auto;
+    
+}
+main .m1 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .m1 .left {
+    position: relative;
+}
+main .m1 .left .bnr {}
+main .m1 .left .bnr img{}
+main .m1 .left .close{
+    background-color: #1e6cb3;
+    border-radius: 5px;
+    padding: 5px;
+    position:absolute;
+    bottom:20px; right: 5px;
+    color:white;
+}
+
+/* 코로나19현황배너 */
+main .m1 .r_top {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width:360px;
+}
+main .m1 .r_top .corona {
+    position: relative;
+    display: block;
+}
+main .m1 .r_top .corona img {}
+main .m1 .r_top .corona .date {
+    position:absolute;
+    width:140px; top:80px; right:20px; top:11px;
+}
+main .m1 .r_top .corona .pos {
+    position:absolute;
+    top:85px; left:80px;
+}
+main .m1 .r_top .corona .new_pos {
+    position:absolute;
+    top:85px; right:80px;
+}
+main .m1 .r_top .corona .out {
+    position:absolute;
+    top:160px; left:60px;
+}
+main .m1 .r_top .corona .new_out {
+    position:absolute;
+    top:160px; left:190px;
+}
+main .m1 .r_top .corona .death {
+    position:absolute;
+    top:160px; right:60px;
+}
+/* main .m1 .r_top .corona .re {} */
+/* 교통정보 */
+main .m1 .r_top .traffic {
+    
+}
+main .m1 .r_top .traffic img {}
+
+/* 두번쨰 라인 */
+main .m2 {
+    background-color: aqua;}
+main .m2 .top {}
+main .m2 .top h1 {}
+main .m2 .top a {}
+main .m2 .btm {
+    border-top: 1px solid black
+}
+main .m2 .btm a {
+    background: yellow url(../image/icon_service/css_sprites.png) no-repeat;
+    width: 60px; height: 60px;
+}
+main .m2 .btm a span {}
