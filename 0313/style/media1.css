@@ -1,0 +1,19 @@
+#wrap {
+    width: 900px; height: 500px; margin:50px auto 0;
+    background: aqua; text-transform: uppercase;
+    text-align: center; line-height: 500px; font-size: 3rem;}
+/*  max는 큰값에서 작은 값으로 내려오기 때문에 처음 위에 정한 크기 이상으로 미디어쿼리 설정 안됨 */
+@media screen and (max-width:900px) {
+    #wrap {background: yellow;}
+}
+@media screen and (max-width:700px){
+    #wrap {background: pink;}
+}
+/* }
+@media screen and (min-width:500px) {
+    #wrap {background: yellow;}
+}
+@media screen and (min-width :700px) {
+    #wrap {background:pink;}
+}
+ */
