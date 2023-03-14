@@ -1,0 +1,187 @@
+#visual_bg {
+    background: url(../image/bg1.png) center;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+#visual_bg #visual_bg_gra {
+    background: linear-gradient(0deg, rgba(0,0,0,0.7), transparent);
+}
+#visual_bg #visual_bg_gra .container {
+    width:1220px; margin: 0 auto; padding:300px 0;
+    text-align: center; position: relative;
+}
+#visual_bg #visual_bg_gra .container .logo {
+    width:70px; position: absolute; left:0; top:0;
+}
+#visual_bg #visual_bg_gra .container .logo a {}
+#visual_bg #visual_bg_gra .container .logo a img {
+    width:100%; 
+}
+#visual_bg #visual_bg_gra .container .title {
+    font-weight: 600; color:white;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    margin-bottom: 50px;
+}
+#visual_bg #visual_bg_gra .container .title em {
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+}
+#visual_bg #visual_bg_gra .container .sponsor {
+    
+}
+#visual_bg #visual_bg_gra .container .sponsor img {
+    margin:0 auto; 
+}
+#visual_bg #visual_bg_gra .container .question {
+    position: absolute; right:0; bottom:200px
+}
+#visual_bg #visual_bg_gra .container .question img{}
+
+/* ----두번째----- */
+#quiz_bg {
+    background-image: url(../image/quiz_bg.png);
+    background-size: cover;
+}
+#quiz_bg #bag_sec {
+    width:1220px;
+    margin:0 auto;
+    padding:100px 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+#quiz_bg #bag_sec .quiz{
+    
+}
+#quiz_bg #bag_sec .quiz h2{
+    color:white; font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+#quiz_bg #bag_sec .quiz p{
+    color:white;
+    line-height: 60px;
+}
+#quiz_bg #bag_sec .quiz form {
+
+}
+#quiz_bg #bag_sec .quiz form fieldset {
+    border:none;
+}
+#quiz_bg #bag_sec .quiz form fieldset ul{
+    color:white;
+}
+#quiz_bg #bag_sec .quiz form fieldset ul li{
+    line-height: 30px;
+}
+#quiz_bg #bag_sec .quiz form fieldset ul li input {}
+#quiz_bg #bag_sec .quiz form fieldset ul li input label{}
+#quiz_bg #bag_sec .quiz form fieldset p {
+    background-color: #666;
+    text-align: center;
+    border-radius: 10px;
+    margin-top:20px;
+}
+#quiz_bg #bag_sec .quiz form fieldset p button {
+    
+    color:white
+}
+#quiz_bg #bag_sec .participation {}
+#quiz_bg #bag_sec .participation .par_img {}
+#quiz_bg #bag_sec .participation .par_img img {}
+#quiz_bg #bag_sec .participation p {
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+/* --------캠페인 통합------------- */
+.campaign_bg {}
+.campaign_bg .container {
+    margin:0 auto;
+    padding: 100px 0;
+    width:1220px;
+}
+.campaign_bg .container h2 {}
+
+/* ---------배경모음----------- */
+.campaign1 {
+    background-image: url(../image/video_bg.png);}
+.campaign2 {
+    background-image: url(../image/50_bg.png);
+}
+.campaign3 {
+    background-image: url(../image/bg3.png);
+}
+.campaign4 {
+    background-image: url(../image/50_bg.png);
+}
+.campaign5{
+    background-image: url(../image/wwf.jpg);
+}
+.campaign6 {
+    background-image: url(../image/50_bg.png);
+}
+.campaign7 {
+    background-image: url(../image/bg2.png);
+}
+.campaign_bg {background-size: cover; background-position: center;}
+/* --------세번쨰 페이지---------- */
+.campaign_bg {
+}
+.campaign1 .container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.campaign1 .container h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+.campaign1 .container iframe {
+    width: 720px; height: 480px;
+    
+}
+.campaign1 .container a {
+    margin:40px 0;
+}
+.campaign1 .container a img {}
+
+
+/* ------네번째-------- */
+.campaign_bg {
+
+}
+
+.campaign2 .container h2 {
+    color:white;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+.campaign2 .container h2 em {
+    color:#2E3148;
+    background-color: white;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+.campaign2 .container p {
+    color:white;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+.campaign2 .container .pola {
+    
+}
+.campaign2 .container .pola img {
+    width: 1220px;
+}
