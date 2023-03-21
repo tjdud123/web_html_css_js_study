@@ -1,0 +1,37 @@
+.container {}
+.container .big {
+    background-color: black;
+    
+}
+.container .big img {
+    width:100%}
+.container .big img span{}
+.container .small {
+    
+}
+.container .small img {
+    width :33%;
+}
+.container .small img span {
+    display: block;
+}
+
+.container .big:nth-child(1) {grid-area: big}
+.container .small:nth-child(2) {grid-area: s1}
+.container .small:nth-child(3) {grid-area: s2}
+.container .small:nth-child(4) {grid-area: s3}
+.container .small:nth-child(5) {grid-area: s4}
+.container .small:nth-child(6) {grid-area: s5}
+.container .small:nth-child(7) {grid-area: s6}
+/* ------------grid area-------------- */
+.container {
+    display: grid;
+    background-color: aqua;
+    grid-template-rows: repeat(3, 33%);
+    grid-template-columns: repeat(1, 50%) repeat(2, 33%);
+    grid-template-areas: 
+    'big s1 s2'
+    'big s3 s4'
+    'big s5 s6';
+
+}
