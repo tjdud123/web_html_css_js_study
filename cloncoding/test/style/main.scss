@@ -1,0 +1,103 @@
+$font-jua:'Jua', sans-serif;
+/* sass 처음 실행시 깃배쉬 실행해서 
+Administrator@USER-267TFHN2H7 MINGW64 /e/윤서영/WEB/cloncoding/10_I_NARA
+$ cd styles
+bash: cd: styles: No such file or directory
+
+Administrator@USER-267TFHN2H7 MINGW64 /e/윤서영/WEB/cloncoding/10_I_NARA
+$ cd style
+
+Administrator@USER-267TFHN2H7 MINGW64 /e/윤서영/WEB/cloncoding/10_I_NARA/style
+$ sass main.scss main.css*/
+
+header {
+    height: 100px;
+    background: linear-gradient(0deg, rgba(255,255,255,0.5), transparent);
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%; padding:0 15px;
+    position:fixed; top:0; left:0; z-index:999;
+    align-items: center;
+    h1{width:150px;
+        a{img{width:100%}}}
+    .right{display: flex; flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        .app{font-family: $font-jua;
+            border: 2px solid #fff; padding: 15px 25px; font-weight: 700;
+            color:#fff ; border-radius: 20px; 
+        margin-right: 20px;}
+        .all_nav{
+            span 
+                {display: block;
+                width:30px; height: 5px;
+                border-radius: 15px;
+                background: #fff
+                }
+            span:nth-child(1) {
+                
+            }
+            span:nth-child(2) {margin:5px 0;}
+            span:nth-child(3) {}
+        }
+        }
+}
+main {
+    .first_banner {position: relative;
+        .contents_first_top {position: absolute; top:50%; left:50%; transform: translate(-50%,-50%); text-align: center; 
+        }
+            h2 {font-family: $font-jua;
+                font-size: 3rem;
+                color:#fff;
+                padding-bottom: 30px;
+                padding-top: 30px;
+                line-height: 1.5;
+            }
+            p {font-family: $font-jua;
+                font: size 1.5remgit;
+                color:#fff; padding-bottom: 30px;
+            }
+            a{
+                p {font-size: 2.0rem;
+                    background-color: #fff; color:#000;
+                    border-radius: 15px;
+                    padding: 20px 25px 20px 25px;
+                }
+            }
+        }
+        .page_down{position: absolute; bottom:100px; right: 50%;
+        }
+        video {margin-top: -100px;
+        }
+        .contents_first_top::after{
+            content: ''; display: block; width: 100%; height: 100%;
+            background: linear-gradient(0deg, rgba(0,0,0,0.5), transparent);
+        }
+        .event_wrap { background-color: aqua;  width:1200px; margin: 0 auto; height: 100vh;
+            h2 {font-size: 2.5rem; font-family: $font-jua; 
+            }
+            p{
+                padding-top: 20px;
+            }
+            .more{font-family: $font-jua; padding-top:30px;
+                img{padding-top:30px;}
+            }
+            .slide_wrap {
+                .slide_container {display:grid; grid-template-columns: repeat(3, 1fr); grid-template-rows:320px;
+                    .slide1 {background: #ffe552; background-image: url(../images/event_image_0_20221028085348_35465.png);}   
+                    .slide2 {background: #b2e9de; background-image: url(../images/event_image_0_20221028085704_61822.png);}
+                    .slide3 {background: #ffcfd8; background-image: url(../images/event_image_3_20221105015010_49282.png);}
+                    .slide {/* width:100%; height:100%; */margin-right: 0;
+                        border-radius: 25px; 
+                        height: 300px;
+                        padding: 30px 10px;
+                        position: relative;
+                        background-position: right bottom;
+                        background-repeat: no-repeat;
+                        background-size: 60%; 
+                        margin-right: 5px;}
+                }
+            }
+        }
+    }

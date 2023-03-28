@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/* sass 처음 실행시 깃배쉬 실행해서 
+Administrator@USER-267TFHN2H7 MINGW64 /e/윤서영/WEB/cloncoding/10_I_NARA
+$ cd styles
+bash: cd: styles: No such file or directory
+
+Administrator@USER-267TFHN2H7 MINGW64 /e/윤서영/WEB/cloncoding/10_I_NARA
+$ cd style
+
+Administrator@USER-267TFHN2H7 MINGW64 /e/윤서영/WEB/cloncoding/10_I_NARA/style
+$ sass main.scss main.css*/
+header {
+  height: 100px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), transparent);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  align-items: center; }
+  header h1 {
+    width: 150px; }
+    header h1 a img {
+      width: 100%; }
+  header .right {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center; }
+    header .right .app {
+      font-family: "Jua", sans-serif;
+      border: 2px solid #fff;
+      padding: 15px 25px;
+      font-weight: 700;
+      color: #fff;
+      border-radius: 20px;
+      margin-right: 20px; }
+    header .right .all_nav span {
+      display: block;
+      width: 30px;
+      height: 5px;
+      border-radius: 15px;
+      background: #fff; }
+    header .right .all_nav span:nth-child(2) {
+      margin: 5px 0; }
+
+main .first_banner {
+  position: relative; }
+  main .first_banner .contents_first_top {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  main .first_banner h2 {
+    font-family: "Jua", sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    padding-bottom: 30px;
+    line-height: 1.5; }
+  main .first_banner p {
+    font-family: "Jua", sans-serif;
+    font: size 1.5rem;
+    color: #fff;
+    padding-bottom: 30px; }
+  main .first_banner a p {
+    font-size: 2.0rem;
+    background-color: #fff;
+    color: #000;
+    border-radius: 15px;
+    padding: 20px 25px 20px 25px; }
+main .page_down {
+  position: absolute;
+  bottom: 100px;
+  right: 50%; }
+main video {
+  margin-top: -100px; }
+main .contents_first_top::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent); }
+main .event_wrap {
+  background-color: aqua;
+  width: 1200px;
+  margin: 0 auto;
+  height: 100vh; }
+  main .event_wrap h2 {
+    font-size: 2.5rem;
+    font-family: "Jua", sans-serif; }
+  main .event_wrap p {
+    padding-top: 20px; }
+  main .event_wrap .more {
+    font-family: "Jua", sans-serif;
+    padding-top: 30px; }
+    main .event_wrap .more img {
+      padding-top: 30px; }
+  main .event_wrap .slide_wrap .slide_container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+    main .event_wrap .slide_wrap .slide_container .slide {
+      width: 32%;
+      height: 100%; }
+    main .event_wrap .slide_wrap .slide_container .slide1 {
+      background: #ffe552;
+      border-radius: 25px;
+      background-image: url(../images/event_image_0_20221028085348_35465.png);
+      height: 300px;
+      padding: 30px 10px;
+      position: relative;
+      background-position: right bottom;
+      background-repeat: no-repeat;
+      background-size: 300px; }
+    main .event_wrap .slide_wrap .slide_container .slide2 {
+      background: #b2e9de; }
+    main .event_wrap .slide_wrap .slide_container .slide3 {
+      background: #ffcfd8; }
+
+/*# sourceMappingURL=main.cs.map */
