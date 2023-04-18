@@ -1,0 +1,49 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  align-items: center;
+  width: 100vw;
+}
+header h1 {
+  @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+  font-size: 3rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  line-height: 100px;
+}
+header nav {
+  text-align: center;
+  background-color: #fff;
+}
+header nav a {
+  display: inline-block;
+  line-height: 50px;
+  color: #222;
+  padding: 0 20px;
+}
+
+main .s1 {
+  background-image: url(../images/bg1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+main .s2 {
+  background-image: url(../images/bg2jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+main .s3 {
+  background-image: url(../images/bg3.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+main .s4 {
+  background-image: url(../images/bg4.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}/*# sourceMappingURL=scroll1.css.map */

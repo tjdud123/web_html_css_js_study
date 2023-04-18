@@ -1,0 +1,51 @@
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    align-items: center;
+}
+header h1 {  font-size: 3rem;
+    
+    background-color: rgba(255, 255, 255, 0.5);
+    line-height: 100px;}
+header h1 nav {text-align: center;
+    background-color: #fff;}
+header h1 nav a {display: inline-block;
+    line-height: 50px;
+    color: #222;
+    padding: 0 20px;}
+main {}
+main .s1 {
+    background-image: url(../images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+main .s2 {
+    background-image: url(../images/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+main .s3 {
+    background-image: url(../images/bg3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+main .s4 {
+    background-image: url(../images/bg4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+main .bar{
+    display: block; position: fixed; bottom: 100px; left:0;
+    
+}
+main .bar .move{
+    display: block; content: '';
+    width: 50px; height: 2px; background:#222;
+    margin:20px 0;
+}
+main .bar .active

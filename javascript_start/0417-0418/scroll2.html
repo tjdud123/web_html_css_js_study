@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/scroll2.css">
+</head>
+<body>
+    <header>
+        <h1>Interior View</h1>
+        <nav>
+            <a href="#">A</a>
+            <a href="#">B</a>
+            <a href="#">C</a>
+            <a href="#">D</a>
+        </nav>
+    </header>
+    <main>
+        <section class="s1"></section>
+        <section class="s2"></section>
+        <section class="s3"></section>
+        <section class="s4"></section>
+        <div class="bar">
+            <span class="move"></span>
+            <span class="move"></span>
+            <span class="move"></span>
+            <span class="move"></span>
+            
+
+        </div>
+    </main>
+    <script>
+        const header = document.querySelector('header')
+        const nav = document.querySelectorAll('header>nav>a')
+        const section = document.querySelectorAll('section')
+        const bar = document.querySelectorAll('main >.bar')
+        console.log(header, nav, section,bar)
+
+        header.style.transition = 'all 0.3s'
+        window.addEventListener('scroll',()=>{
+            if(window.pageYOffset >= section[1].offsetTop -200){
+                header.style.transform  = 'translateY(-100px)' 
+            }
+            else{
+                header.style.transform = 'translateY(0)'
+            }
+            console.log(this)
+        })
+
+        nav.forEach((target,index)=>{
+            target.addEventListener('click',(e)=>{
+                e.preventDefault()//href 막기
+                window.scrollTo(0,section[index].offsetTop)
+            })
+        })
+
+        for(let i of bar){i.style.transition='all 0.3s'}
+
+        bar_reset(0)//초기값 선언
+
+        window.addEventListener('scroll',()=>{
+            if(window.pageYOffset >= section[0].offsetTop){bar_reset(0)}
+            if(window.pageYOffset >= section[1].offsetTop-200){bar_reset(1)}
+            if(window.pageYOffset >= section[2].offsetTop-200){bar_reset(2)}
+            if(window.pageYOffset >= section[3].offsetTop-200){bar_reset(3)}
+        })
+        function bar_reset(num){
+            for(let i of bar){i.classList.remove('bar_active')}
+            bar[num].classList.add('bar_active')
+        }
+
+        
+    </script>
+</body>
+</html>
