@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+        *{box-sizing:border-box; margin:0; padding:0; font-family: 'Noto Sans KR';}
+        header{}
+        main{}
+        main section{}
+        main .first, main .last{
+            background: #222; color:#fff; font-size: 7rem;
+            line-height: 100vh; width:100%; text-align: center;
+            text-transform: capitalize;
+        }
+        main .first{}
+        /* 스크롤영역디자인 */
+        main .scroll_wrap{/* 여백, 색상 이미지 */
+        background: #f1f1f1;}
+        main .scroll_wrap .scroll_height{/* 스크롤되는 높이값 입력 */
+            height: 700vh;
+        }
+        main .scroll_wrap .scroll_height .scroll_sticky{
+            background: url(./imges/airpods.jpg) no-repeat;
+            position:sticky; top:0; height: 100vh;
+        }
+        main .scroll_wrap .scroll_height .scroll_sticky .container{}
+        main .scroll_wrap .scroll_height .scroll_sticky .container h1{
+            font-family: 'Satisfy'; font-size:20rem; padding:100px;
+            white-space: nowrap;/* 강제로 줄바꿈 되던것들 일자로 만들어줌 */
+        }
+        main .last{
+            
+        }
+        footer{}
+
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>
+        <section class="first">first section</section>
+        <!-- 스크롤구간 시작 태그는 상관없는데 층이 중요함-->
+        <section class="scroll_wrap"><!-- 전체틀 -->
+            <section class="scroll_height"><!-- 스크롤높이 -->
+                <section class="scroll_sticky"><!-- 고정대상 -->
+                    <div class="container"><!-- 내용삽입위치   -->
+                        <h1>I wanna go home with ma airpod let me go home wanna sleep fukkk</h1>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <!-- 스크롤구간 종료 -->
+        <section class="last">last section</section>
+    </main>
+    <script>
+        const scroll_wrap = document.querySelector('.scroll_wrap')
+        const scroll_container = document.querySelector('.scroll_wrap .container')
+    
+        console.log(scroll_wrap, scroll_container)
+    
+        window.addEventListener('scroll',()=>{
+            //1.윈도우에서 얼마나 스크롤 되었는가?
+            let yOffset = window.scrollY
+            console.log(`Yoffset=>${yOffset}`)
+            //2.스크롤 요소 기준으로는 얼마나 스크롤 하고있는가?
+            console.log(`scrollWrap 위치=>${scroll_wrap.offsetTop}`)
+            console.log(`scrollWrap 기준 스크롤값=>${yOffset-scroll_wrap.offsetTop}`)
+            let amount =yOffset - scroll_wrap.offsetTop
+
+            if(yOffset >= scroll_wrap.offsetTop){
+                scroll_container.style.transform = `translateX(-${amount}px)`
+                console.log(this)
+            }else{
+
+            }
+        })
+    </script>
+</body>
+</html>

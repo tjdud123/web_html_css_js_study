@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box; margin: 0;padding: 0;}
+        body{height: 500vh; overflow-x: hidden;}
+        .container{}
+        .container img{
+            width: 100%; position: fixed; left:0; top:0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./imges/video/1.jpg" alt="">
+    </div>
+    <script>
+        const imgElem = document.querySelector('.container img')
+        let totalImageCount = 282
+        let videoImages = []
+
+        setImages()
+        init()
+        function setImages(){
+            for(let i=1; i<=totalImageCount; i++){
+            let imgE = document.createElement('img')
+            imgE.src = `./imges/video/${i}.jpg`
+            console.log(imgE)
+            videoImages.push(imgE)
+            }
+        }
+        function init(){
+            window.addEventListener('scroll',()=>{
+                let progress = pageYOffset / (document.body.offsetHeight - innerHeight)
+                let currentFrame = Math.round(totalImageCount * progress)
+                //console.log(`progress>>${progress},curretFrame>>${currentFrame}`)
+                imgElem.src = videoImages[currentFrame].src
+            })
+        }
+        
+
+    </script>
+</body>
+</html>

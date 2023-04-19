@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing:border-box; margin:0; padding:0;}
+        html, body{
+            overflow-x: auto;
+            overflow-y: hidden;
+            width:max-content;
+        }
+        main {}
+        main section {}
+        main section .bg {
+            width:7000px; height: 100vh;
+            background:
+            url(./imges/game_background_3/layers/clouds_1.png),
+            url(./imges/game_background_3/layers/ground_3.png),
+            url(./imges/game_background_3/layers/rocks.png),
+            url(./imges/game_background_3/layers/sky.png);
+            background-position: center, center, center, center;
+            /*  배경이미지 움직이거나 고정할떄 어테치먼트 */
+            background-attachment: scroll, fixed, scroll, fixed;
+            background-size: 50%, 1000px, 2000px, cover;
+            background-repeat: repeat-x, repeat-x, repeat-x, repeat-x;
+        }
+        main section .bg h1{
+            font-size: 10rem; font-weight: 600;
+            text-align: center; line-height: 100vh;
+        }
+        body::-webkit-scrollbar-thumb {
+            height: 10px; width: 10px;
+            background-color: cadetblue;
+        }
+        body::-webkit-scrollbar-track {
+        background: rgba(33, 122, 244, .1);  /*스크롤바 뒷 배경 색상*/
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="bg">
+                <h1>집에보내주세요</h1>
+            </div>
+        </section>
+    </main>
+</body>
+<script>
+    document.body.addEventListener('wheel',(e)=>{
+        document.body.scrollLeft += e.deltaY 
+        console.log(this)
+    })
+</script>
+</html>

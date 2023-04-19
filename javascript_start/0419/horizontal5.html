@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유니세프 | 프로미스링 | 랜딩페이지</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+        .first_bg {
+            margin:0 auto;
+            }
+        .first_bg .scroll_wrap {
+        }
+        .first_bg .scroll_wrap .scroll_height{
+            height: 600vh;
+        }
+        .first_bg .scroll_wrap .scroll_height .scroll_sticky{
+            height:200vh; position:sticky; top:0; 
+        }
+        .first_bg .scroll_wrap .scroll_height .scroll_sticky .first_left{}
+        .first_bg .scroll_wrap .scroll_height .scroll_sticky .first_left h1 .logo img{
+            width: 224px;
+            margin:20px 0 60px 0;
+        }
+        .first_bg .scroll_wrap .scroll_height .scroll_sticky .text1{
+            text-align: center;
+        }
+        .first_bg .scroll_wrap .scroll_height .scroll_sticky .text1 p{
+            font-size: 2.1875rem;
+            color:#333;
+        }
+        .first_bg .scroll_wrap .scroll_height .scroll_sticky .text1 h2{
+            margin-top:35px;
+            font-weight: 700;
+            font-size:4.375rem;
+            color: #fff;
+            background-color: #00aff2;
+            display: inline-block;
+            padding:10px;
+        }
+        .first_bg .scroll_wrap .scroll_height .scroll_sticky .container{
+
+        }
+        .first_bg .scroll_wrap .scroll_height .scroll_sticky .container h1 {
+            font-size:20rem; padding:100px;
+            white-space: nowrap;
+        }
+        .first_bg .scroll_wrap .scroll_height .scroll_sticky .first_right{
+            position:relative;
+            margin-top: 80px;
+            padding-bottom: 200px;
+            text-align: center;
+            flex-flow: row nowrap;
+        }
+        .first_bg .scroll_wrap .scroll_height .scroll_sticky .first_righ .ring img{
+            width: 100px;
+        }
+        .first_bg .scroll_wrap .scroll_height .scroll_sticky .first_righ .button img{
+            width:300px;
+            margin-top: 80px;
+            transition: all 0.7s;
+        }
+        .first_bg .scroll_wrap .scroll_height .scroll_sticky .first_righ .button img:hover{
+            transform: scale(0.9);
+        }
+        .first_bg .scroll_wrap .scroll_height .scroll_sticky .container{
+            position: absolute; top:500px; left: 0; z-index: -2;
+        }
+        .first_bg .scroll_wrap .scroll_height .scroll_sticky .container h1{
+            font-family: 'Satisfy'; font-size:20rem; padding:100px;
+            white-space: nowrap; 
+        }
+    </style>
+</head>
+<body>
+    <!-- 첫페이지 -->
+    <div class="first_bg">
+        <div class="scroll_wrap">
+            <div class="scroll_height">
+                <div class="scroll_sticky">
+                    <div class="first_left">
+                        <h1>
+                            <a href="#" class="logo">
+                                <img src="./img/unicef_for-every-child_cyan_horizontal_english.png" alt="유니세프로고">
+                            </a>
+                        </h1>
+                    </div>
+                    <div class="text1">
+                        <p>어린이와 함께하는 소중한 약속의 증표</p>
+                        <h2>유니세프 프로미스 링</h2>
+                    </div>
+                    <div class="first_right">
+                        <h2 class="ring">
+                            <img src="./imges/s3_ring 1.png" alt="유니세프 프로미스링">
+                        </h2>
+                        <h2 class="button">
+                            <img src="./imges/Group 1.png" alt="어린이와 약속맺기 버튼">
+                        </h2>
+                    </div>
+                    <div class="container">
+                        <h1>For Every Children, Promise Again</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- <div class="content1">
+            <div class="first_left">
+                <h1>
+                    <a href="#" class="logo">
+                        <img src="./img/unicef_for-every-child_cyan_horizontal_english.png" alt="유니세프로고">
+                    </a>
+                </h1>
+            </div>
+            <div class="text1">
+                <p>어린이와 함께하는 소중한 약속의 증표</p>
+                <h2>유니세프 프로미스 링</h2>
+            </div>
+            <div class="first_right">
+                <h2 class="ring">
+                    <img src="./imges/s3_ring 1.png" alt="유니세프 프로미스링">
+                </h2>
+                <h2 class="button">
+                    <img src="./imges/Group 1.png" alt="어린이와 약속맺기 버튼">
+                </h2>
+            </div>
+        </div> -->
+<script>
+    const scroll_wrap = document.querySelector('.scroll_wrap')
+    const scroll_container = document.querySelector('.scroll_wrap .container')
+    console.log(scroll_wrap, scroll_container)
+    window.addEventListener('scroll',()=>{
+        let Yoffset = window.scrollY
+        
+        console.log(`Yoffset=>${Yoffset}`)
+            //2.스크롤 요소 기준으로는 얼마나 스크롤 하고있는가?
+        console.log(`scrollWrap 위치=>${scroll_wrap.offsetTop}`)
+        console.log(`scrollWrap 기준 스크롤값=>${Yoffset-scroll_wrap.offsetTop}`)
+        let amount = Yoffset - scroll_wrap.offsetTop
+
+        if(Yoffset >= scroll_wrap.offsetTop){
+            scroll_container.style.transform = `translateX(-${amount}px)`
+            console.log(this)
+        }
+    })
+</script>
+</body>
+</html>

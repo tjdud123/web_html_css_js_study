@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{}
+        .container h1{}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>세상을 바꾸는힘<br>
+        HUNDAI</h1>
+        <video src="./video/hyundai.mp4" muted></video>
+    </div>
+    <script>
+        const hyundai = document.querySelector('.container video')
+
+        loadVideo()
+        function loadVideo(){
+            hyundai.addEventListener('loadeddata',()=>{
+                console.log(this)
+                scroll_video()
+            })
+        }
+        function scroll_video(){
+            window.addEventListener('scroll',()=>{
+                let progress = pageYOffset/(document.body.offsetHeight - window.innerHeight)
+                console.log(progress)
+
+                hyundai.currentTime = hyundai.duration * progress
+            })
+        }
+    </script>
+</body>
+</html>
